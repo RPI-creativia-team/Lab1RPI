@@ -1,0 +1,19 @@
+<svg id="Группа_1" data-name="Группа 1" xmlns="http://www.w3.org/2000/svg" width="76" height="69" viewBox="0 0 76 69">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #ff0036;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        fill-opacity: 0;
+        stroke: #ff0036;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <path id="Shape_3_copy_3" data-name="Shape 3 copy 3" class="cls-1" d="M481.751,774.993l-18.749-34,18.749-34h37.5l18.749,34-18.749,34h-37.5Z" transform="translate(-462.5 -706.5)"/>
+  <path id="Shape_3_copy" data-name="Shape 3 copy" class="cls-2" d="M481.346,774.993l-18.749-34,18.749-34h37.5l18.749,34-18.749,34h-37.5Z" transform="translate(-462.5 -706.5)"/>
+</svg>
