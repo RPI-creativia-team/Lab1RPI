@@ -1,0 +1,161 @@
+.n-header-bg {
+    margin-bottom: -73px;
+    position: relative;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.n-header-border-spacing {
+    padding: 0px 115px 0px 115px;
+    height: 100%;
+}
+
+.n-nav-img img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.n-navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.n-nav-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 70px;
+    /*align-items: center;*/
+
+    list-style: none;
+}
+
+.n-nav-list li {
+    padding-left: 17px;
+    margin: auto;
+}
+
+.n-nav-list li:not(:last-child) {
+    padding-right: 17px;
+}
+
+.n-nav-list li a {
+    text-decoration: none;
+    color: #a4a4a4;
+    font-family: Raleway regular;
+    font-size: 18px;
+}
+
+.n-nav-list li:hover > a {
+    color: white;
+}
+
+.n-nav-list li:hover::before {
+    content: '';
+    display: block;
+    width: 27px;
+    height: 3px;
+    background-color: #ff0036;
+    position: relative;
+}
+
+.n-nav-list li:hover::after {
+    content: '';
+    display: block;
+    width: 27px;
+    height: 3px;
+    background-color: #ff0036;
+    position: relative;
+}
+
+
+/*Slider Page 1*/
+
+.n-1page-bg-img {
+    background: url("images/nImg/main-article-background.png")  no-repeat;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.n-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.n-slider-info {
+    width: 1040px;
+}
+
+.n-text-white {
+    color: white;
+}
+
+.n-slider-text {
+    font-family: Lato regular;
+    font-size: 16px;
+    line-height: 1.35;
+
+    margin-bottom: 25px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.n-slider-header {
+    font-family: Raleway bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.n-slider-button {
+    border-style: none;
+    width: 170px;
+    height: 50px;
+    background-color: #131313;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    font-family: Raleway regular;
+    font-size: 18px;
+}
+
+.n-slider-button:hover {
+    background-color: #ff0036;
+}
+
+.n-slider-container-buttons {
+    margin-top: 25px;
+}
+
+.n-slider-arrow {
+    position: absolute;
+    color: #a4a4a4;
+}
+
+.n-slider-arrow:hover {
+    color: #ff0036;
+}
+
+.n-slider-container-arrows {
+    margin-top: 67px;
+}
+
+.n-arrow-left {
+    left: -63%;
+}
+
+.n-arrow-right {
+    width: auto;
+    left: 112%;
+}
