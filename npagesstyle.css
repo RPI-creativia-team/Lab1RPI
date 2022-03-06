@@ -6,7 +6,7 @@
 }
 
 .n-header-border-spacing {
-    padding: 0px 115px 0px 115px;
+    padding: 0 115px 0 115px;
     height: 100%;
 }
 
@@ -35,6 +35,7 @@
 
 .n-nav-list li {
     padding-left: 17px;
+
     margin: auto;
 }
 
@@ -59,7 +60,8 @@
     width: 27px;
     height: 3px;
     background-color: #ff0036;
-    position: relative;
+
+    margin: auto auto 15.99pt;
 }
 
 .n-nav-list li:hover::after {
@@ -68,7 +70,8 @@
     width: 27px;
     height: 3px;
     background-color: #ff0036;
-    position: relative;
+
+    margin: 15.99pt auto auto;
 }
 
 
