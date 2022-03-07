@@ -1,3 +1,4 @@
+/* Header */
 .n-header-bg {
     margin-bottom: -73px;
     position: relative;
@@ -74,8 +75,7 @@
     margin: 15.99pt auto auto;
 }
 
-
-/*Slider Page 1*/
+/* Slider Page 1 */
 
 .n-1page-bg-img {
     background: url("images/nImg/main-article-background.png")  no-repeat;
@@ -160,5 +160,93 @@
 
 .n-arrow-right {
     width: auto;
-    left: 112%;
+    left: 112.4%;
+}
+
+/* Page 5 */
+
+.n-page5-bg-img {
+    height: 650px;
+    background: url("images/nImg/pg5-bg.png") no-repeat;
+}
+
+.n-border-spacing-5page {
+    padding: 85px 115px 100px 115px;
+    text-align: center;
+}
+
+.n-title-5page h2{
+    font-family: Raleway bold;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.n-title-5page p {
+    font-family: Lato bold;
+    margin: 0;
+    color: #a4a4a4;
+    font-size: 16px;
+}
+
+.n-5pade-info {
+    margin-top: 100px;
+    height: 270px;
+    display: flex;
+}
+
+.n-5page-data {
+    width: 50%;
+    padding: 0 15px 0 0 ;
+}
+
+.n-5page-clients {
+    width: 50%;
+
+    display: flex;
+    justify-content:  space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 0 0 0 15px;
+}
+
+.n-5page-data-text {
+    font-family: Lato regular;
+    color: #a4a4a4;
+
+    margin-bottom: 40px;
+}
+
+.n-5page-data-title {
+    font-family: Raleway regular;
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+
+    margin: 0 0 40px;
+}
+
+.n-5page-cont-selector {
+    margin-top: 23px;
+}
+
+.n-5page-selector {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #e0e0e0;
+}
+
+.n-5page-selector:hover {
+    background-color: #ff0036;
+}
+
+.n-5page-client-name {
+    font-family: Raleway bold;
+    font-size: 16px;
+    color: #ff0036;
+
+    margin-top: 10px;
 }
