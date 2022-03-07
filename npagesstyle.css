@@ -250,3 +250,28 @@
 
     margin-top: 10px;
 }
+
+/* Page 9 */
+.n-9page-border-spacing {
+    padding: 100px 115px 85px 115px;
+}
+
+.n-title-subtitle h2 {
+    font-family: Raleway bold;
+
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.n-title-subtitle p {
+    font-family: Lato bold;
+    margin: 0;
+    color: #505050;
+    font-size: 16px;
+}
+.n-title-subtitle {
+    margin-bottom: 105px;
+    text-align: center;
+}
+
