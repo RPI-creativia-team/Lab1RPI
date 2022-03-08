@@ -275,3 +275,93 @@
     text-align: center;
 }
 
+.n-9page-blog-img {
+    display: inline-block;
+    padding: 0 15px 0 0;
+}
+
+.n-9page-blog-data {
+    display: inline-block;
+
+    width: 570px;
+    padding: 0 0 0 15px;
+}
+
+.n-9page-blog-data h3{
+    font-family: "Raleway SemiBold";
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+.n-9page-blog-data > p {
+    font-family: "Lato regular";
+    font-size: 16px;
+    text-align: justify;
+
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.n-9page-blog-data > button {
+    width: 120px;
+    height: 40px;
+    border: none;
+
+    font-family: "Lato regular";
+    font-size: 16px;
+    color: white;
+    background-color: #262626;
+}
+
+.n-9page-blog-data > button:hover {
+    background-color: #ff0036;
+}
+
+.n-9page-blog-stat {
+    display: inline;
+    margin-right: 20px;
+
+
+    font-family: "Lato regular";
+    font-size: 12px;
+}
+
+.n-9page-blog-stat i {
+    margin: 0 8px 0 0;
+    display: inline;
+}
+
+.n-9page-stat a {
+    text-decoration: none;
+    color: #a2a2a2;
+}
+
+.n-9page-blog-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.n-9page-next-news {
+
+}
+
+.n-9page-next-news i {
+    text-align: center;
+    margin: auto;
+}
+
+.n-9page-circle {
+    margin-left: auto;
+    margin-right: auto;
+
+    background: #f2f2f2;
+    border-radius: 50%;
+    color: #a2a2a2;
+    height: 42px;
+    width: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
