@@ -177,43 +177,6 @@ i.fa-gripfire {
 	/*padding-left: 34px; */
 }
 
-
-/*hexagon view*/
-:root{
-    --hex-side: 44px;
-    --hex-rotate: 30deg; /* угол наклона шестиугольника относительно центра */
-}
-
-.k-hexagon {
-    width: calc(var(--hex-side) * 1.732);
-    height: var(--hex-side);
-    background: #ff0036;
-    position: relative;
-    transform: rotate(var(--hex-rotate));
-    margin-left: 95px;
-
-}
-
-.k-hexagon:before, 
-.k-hexagon:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #ff0036;
-    top: 0;
-    left: 0px;
-}
-
-.k-hexagon:before {
-    transform: rotate(60deg);
-}
-
-.k-hexagon:after {
-    transform: rotate(-60deg);
-}
-/*hexagon view */
-
 /* bottom page 2 text */
 .k-bottom-content h5 {
 	font-family: Raleway medium;
@@ -307,19 +270,6 @@ p.k-adinfo-of-plan {
 	border-color: #e7e7e7;
 }
 
-/*.k-container .k-button-plan:hover {
-	background: #ff0036; 
-	color: #fff; 
-}
-*/
-
-/*.k-button-plan:hover .k-price-of-plan {
-	background: #ff0036; 
-	color: #fff; 
-}
-.k-button-plan:hover p {
-	background: #ff0036; 
-}*/
 
 .k-container:hover .k-price-of-plan {
 	background: #ff0036; 
