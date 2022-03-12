@@ -1,0 +1,321 @@
+.p-portfolio {
+    padding-top: 100px;
+    padding-bottom: 110px;
+    background-color: #262626;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.p-portfolio-title {
+    color: #ffffff;
+    font-family: Raleway bold;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 27px;
+    text-align: center;
+}
+
+.p-portfolio-types {
+    margin-bottom: 100px;
+}
+
+.p-container {
+    display: flex;
+    justify-content: center;
+    line-height: 0;
+}
+
+.p-portfolio-type {
+    color: #a4a4a4;
+    font-family: Lato bold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 10px 20px;
+}
+
+.p-portfolio-type.active {
+    color: #ff0036;
+}
+
+.p-portfolio-type:hover {
+    color: #ff0036;
+}
+
+.p-portfolio-block {
+    position: relative;
+    display: grid;
+    width: 100%;
+    max-width: 400px;
+}
+
+.p-portfolio-block-small {
+    position: relative;
+    display: grid;
+    width: 100%;
+    max-width: 300px;
+}
+
+.p-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0;
+    z-index: 0;
+}
+
+.p-portfolio-block:hover .p-overlay, .p-portfolio-block-small:hover .p-overlay {
+    opacity: 0.9;
+}
+
+.p-portfolio-block:hover .p-icon, .p-portfolio-block-small:hover .p-icon {
+    opacity: 1;
+}
+
+.p-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 157px;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.p-connect,
+.p-icon {
+    grid-area: 1/2;
+}
+
+.fa-plus {
+    font-size: 24px;
+}
+
+.p-design-name {
+    color: #ffffff;
+    font-family: Lato regular;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 30px 10px 20px;
+}
+
+.p-teamwork {
+    padding-bottom: 100px;
+    width:100%;
+}
+
+.p-team-member {
+    width: 270px;
+    position: relative;
+    margin-right: 30px;
+ }
+
+.p-team-member-img {
+    width: 270px;
+    height: 240px;
+}
+
+.p-team-member-info {
+    border: 1px solid #e7e7e7;
+    background-color: #ffffff;
+    padding: 33px 10px;
+    text-align: center;
+}
+
+.p-team-member-info-name {
+    color: #262626;
+    font-family: Raleway medium;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.p-team-member-info-position {
+    color: #505050;
+    font-family: "Lato regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.p-team-member:hover .p-team-member-hover {
+    display: flex;
+    animation: fadeIn 0.7s;
+}
+
+.p-team-member:hover .p-team-member-info-name {
+    color: #ff0036;
+}
+
+.p-team-member:hover .p-team-member-info {
+    border: 1px solid #262626;
+}
+
+.p-team-member-hover {
+    display: none;
+    width: 270px;
+    height: 240px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #262626;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-team-member-hover-block {
+    width: 45px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("images/product-property__icon-block_white.png") center center;
+    background-size: cover;
+    margin: 0 5px;
+    color: #ff0036;
+    font-size: 17px;
+}
+
+.p-team-member-hover-block:hover {
+    color: #ff0036;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.p-progress-skill-70,
+.p-progress-skill-80,
+.p-progress-skill-90 {
+    width: 145px;
+    height: 145px;
+    margin: auto auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-family: Lato light;
+    font-size: 40px;
+    line-height: 94.88px;
+}
+
+.p-progress-skill-70 span {
+    color: #ff0036;
+}
+
+.p-progress-skill-80 span {
+    color: #ff0036;
+}
+
+.p-progress-skill-90 span {
+    color: #ff0036;
+}
+
+.p-progress-skill-70 {
+    background: url("images/skill-border-70.png");
+}
+
+.p-progress-skill-80 {
+    background: url("images/skill-border-80.png");
+}
+
+.p-progress-skill-90 {
+    background: url("images/skill-border-90.png");
+}
+
+.p-progress-skill-name {
+    color: #262626;
+    font-family: Raleway medium;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.p-progress-skill-text {
+    max-width: 151px;
+    margin: auto;
+    color: #505050;
+    font-family: Lato regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.p-separate-red {
+    max-width: 512px;
+    height: 19px;
+    margin: -9px auto 100px;
+    background: url("images/separate-red.png") center center;
+}
+
+.p-teamwork-title {
+    color: #262626;
+    font-family: Raleway bold;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.p-teamwork-title span {
+    color: #ff0036;
+}
+
+.p-teamwork-subtitle {
+    color: #505050;
+    font-family: Lato bold;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.p-teamwork-subtitle span {
+    color: #ff0036;
+}
+
+.p-teamwork-container {
+    display: flex;
+    margin-right: 115px;
+    margin-left: 115px;
+    line-height: 0
+}
+
+.p-teamwork-container-skills {
+    display: flex;
+    margin-right: 326px;
+    margin-left: 326px;
+    line-height: 0;
+}
+
+.p-separate-black {
+    max-width: 512px;
+    height: 19px;
+    background: url("images/separate.png") center center;
+    margin: 90px auto;
+}
+
+.p-progress-skill {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-right: 58px;
+}
