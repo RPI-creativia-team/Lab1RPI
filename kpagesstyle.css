@@ -52,7 +52,8 @@ body {
 
 .k-title-subtitle h3 {
 	font-family: Lato bold;
-	padding-left: 115px;
+	/*padding-left: 115px;*/
+	text-align: center; 
 	margin: 0px;
 	color: #505050;
 	font-size: 16px;
@@ -155,6 +156,9 @@ p.k-main-text-desc{
 .k-hexagon-view:hover {
 	background: url(images/kHoveredHexo.svg); 
 }
+.k-hexagon-view:hover i {
+	color: white; 
+}
 
 .k-hexagon-view i {
 	display: block; 
@@ -172,43 +176,6 @@ i.fa-gripfire {
 	padding-top: 26px; 
 	/*padding-left: 34px; */
 }
-
-
-/*hexagon view*/
-:root{
-    --hex-side: 44px;
-    --hex-rotate: 30deg; /* угол наклона шестиугольника относительно центра */
-}
-
-.k-hexagon {
-    width: calc(var(--hex-side) * 1.732);
-    height: var(--hex-side);
-    background: #ff0036;
-    position: relative;
-    transform: rotate(var(--hex-rotate));
-    margin-left: 95px;
-
-}
-
-.k-hexagon:before, 
-.k-hexagon:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #ff0036;
-    top: 0;
-    left: 0px;
-}
-
-.k-hexagon:before {
-    transform: rotate(60deg);
-}
-
-.k-hexagon:after {
-    transform: rotate(-60deg);
-}
-/*hexagon view */
 
 /* bottom page 2 text */
 .k-bottom-content h5 {
@@ -240,8 +207,12 @@ i.fa-gripfire {
 } 
 
 /* horizontal view */
+.k-prices-bloc-container {
+	display: flex;
+}
 .k-prices-bloc-container div {
-	display: inline-block; 
+	display: inline-block;
+	/*display: inline-flex;*/
 }
 
 .k-container {
@@ -262,7 +233,7 @@ p.k-header-of-plan {
 	text-align: center;
 	margin: 0px;
 }
-p.k-price-of-plan {
+p.k-price-of-plan {  
 	width: 200px;  /* 200 = 270 (initial size) - 70 (padding) */
 	background: #f2f2f2;
 	font-family: Lato black; 
@@ -297,6 +268,20 @@ p.k-adinfo-of-plan {
 	border-width: 0px 1px 1px 1px;
 	border-style: solid;
 	border-color: #e7e7e7;
+}
+
+
+.k-container:hover .k-price-of-plan {
+	background: #ff0036; 
+	color: #fff;	
+}
+
+.k-container:hover .k-price-of-plan .k-subtext-price {
+	color: #fff;	
+}
+
+.k-container:hover .k-button-plan p {
+	background: #ff0036;
 }
 
 .k-text-with-border {
@@ -393,12 +378,16 @@ p.k-adinfo-of-plan {
 	background: url(images/kHoveredBgPage10.svg);
 }
 
+.k-icon-page10:hover i {
+	color: white; 
+}
+
 .k-icon-page10 i {
 	display: block; 
 	padding-top: 25px;  
 	font-size: 20px; 
 	text-align: center;
-	color: #ffffff; 
+	color: #ff0036; 
 }
 
 .k-blok-container {
