@@ -136,9 +136,14 @@ p.k-main-text-desc{
 }
 
 /* bottom of 2 page */
+.k-bottom-icon-block {
+	display: flex;
+}
+
 .k-bottom-content {
 	width: 270px; 
-	display: inline-block;
+	justify-content: center; 
+	margin: auto; 
 	margin-right: 25px; 
 }
 
@@ -147,7 +152,10 @@ p.k-main-text-desc{
 }
 
 .k-hexagon-view {
-	margin-left: 90px;
+	display: flex;
+	margin: auto; 
+	justify-content: center;
+	/*margin-left: 90px;*/
 	width: 89px;
 	height: 77px;
 	background: url(images/kUnhoveredHexagon.svg); 
@@ -216,7 +224,7 @@ i.fa-gripfire {
 }
 
 .k-container {
-	margin-right: 26px; 
+	margin-right: 30px; 
 }
 .k-container:last-child {
 	margin-right: 0px; 
@@ -225,7 +233,7 @@ i.fa-gripfire {
 /* style of plan container */
 p.k-header-of-plan {
 	font-family: Raleway medium;
-	padding: 15px 0px 15px 0px;
+	padding: 14px 0px 13px 0px;
 	font-size: 20px;
 	color: #ffffff; 
 	background: #262626;
@@ -240,7 +248,7 @@ p.k-price-of-plan {
 	font-size: 50px; 
 	color: #262626; 
 	margin: 0px; 
-	padding: 16px 0px 15px 70px; /* 14 0 13 70*/
+	padding: 11px 0px 13px 70px; /* 14 0 13 70*/
 }
 
 span.k-subtext-price {
@@ -257,7 +265,7 @@ p.k-adinfo-of-plan {
 	color: #262626; 
 	margin: 0px;
 	/*padding-top: 20px;*/
-	padding: 18px 0px 18px 0px;  /* 16 0 16 0*/
+	padding: 16px 0px 16px 0px;  /* 16 0 16 0*/
 	border-width: 0px 1px 1px 1px;
 	border-style: solid;
 	border-color: #e7e7e7;
@@ -286,7 +294,7 @@ p.k-adinfo-of-plan {
 
 .k-text-with-border {
 	margin: 0px; 
-	padding: 21px 22px 21px 22px; 
+	padding: 20px 22px 20px 22px; 
 }
 
 .k-text-with-border p {
