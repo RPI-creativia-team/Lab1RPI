@@ -85,14 +85,15 @@ p.k-main-text-desc{
 /*section near the image*/
 /* horizontal positioning */
 .k-col-div-style {
+	display: flex;
 	background: #f7f7f7;
-	width: 568px;
+	width: 564px;
 	height: 45px;
 	border: 1px solid #e7e7e7;
 	margin-bottom: 10px; 
 }
 .k-col-div-style div {
-	display: inline-block;
+	/*display: inline-block;  */
 	padding: 0px 0px 0px 0px;
 }
 
@@ -120,8 +121,7 @@ p.k-main-text-desc{
 	font-family: Raleway medium;
 	font-size: 20px;
 	color: #262626;   
-	display: block;
-	position: absolute;
+	/*position: absolute;*/
 	padding: 10px 0px 9px 34px;
 	/*padding-bottom: 10px;*/
 	padding: auto; 
@@ -314,7 +314,7 @@ p.k-adinfo-of-plan {
 /* twitter part */
 .k-twitter-bg {
 	width: 1400px;
-	height: 298px;
+	height: 294px;
 	background: url(images/kTwitterbg.svg); 
 }
 
@@ -343,7 +343,7 @@ p.k-adinfo-of-plan {
 
 .k-red-hex-page8 {
 	display: block; 
-	margin: 91.5px auto 0px auto;
+	margin: -9px auto 0px auto;
 }
 /* twitter part */
 
@@ -416,7 +416,7 @@ p.k-adinfo-of-plan {
 }
 .k-red-hex-page10 {
 	display: block; 
-	margin: 76.5px auto 0px auto; 
+	margin: -9px auto 0px auto; 
 }
 /* 10 page ends */
 
