@@ -30,13 +30,11 @@
     margin: 0;
     height: 70px;
     /*align-items: center;*/
-
     list-style: none;
 }
 
 .n-nav-list li {
     padding-left: 17px;
-
     margin: auto;
 }
 
@@ -61,7 +59,6 @@
     width: 27px;
     height: 3px;
     background-color: #ff0036;
-
     margin: auto auto 15.99pt;
 }
 
@@ -84,7 +81,6 @@
     align-items: center;
     align-content: center;
     justify-content: center;
-
 }
 
 .n-slider {
@@ -93,7 +89,6 @@
     align-items: center;
     align-content: center;
     justify-content: center;
-
     text-align: center;
 }
 
@@ -128,7 +123,6 @@
     background-color: #131313;
     margin-left: 15px;
     margin-right: 15px;
-
     font-family: Raleway medium;
     font-size: 20px;
 }
@@ -171,14 +165,14 @@
 }
 
 .n-border-spacing-5page {
-    padding: 85px 115px 100px 115px;
+    padding: 100px 115px 100px 115px;
     text-align: center;
 }
 
 .n-title-5page h2{
     font-family: Raleway bold;
     font-size: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
     margin-top: 0;
 }
 
@@ -190,7 +184,7 @@
 }
 
 .n-5pade-info {
-    margin-top: 100px;
+    margin-top: 85px;
     height: 270px;
     display: flex;
 }
@@ -202,19 +196,16 @@
 
 .n-5page-clients {
     width: 50%;
-
     display: flex;
     justify-content:  space-between;
     align-content: space-between;
     flex-wrap: wrap;
-
     padding: 0 0 0 15px;
 }
 
 .n-5page-data-text {
     font-family: Lato regular;
     color: #a4a4a4;
-
     margin-bottom: 40px;
 }
 
@@ -224,12 +215,11 @@
     font-size: 20px;
     color: white;
     text-align: center;
-
     margin: 0 0 40px;
 }
 
 .n-5page-cont-selector {
-    margin-top: 23px;
+    margin-top: 24px;
 }
 
 .n-5page-selector {
@@ -247,7 +237,6 @@
     font-family: Raleway bold;
     font-size: 16px;
     color: #ff0036;
-
     margin-top: 10px;
 }
 
@@ -258,7 +247,6 @@
 
 .n-title-subtitle h2 {
     font-family: Raleway bold;
-
     font-size: 30px;
     margin-bottom: 50px;
     margin-top: 0;
@@ -282,7 +270,6 @@
 
 .n-9page-blog-data {
     display: inline-block;
-
     width: 570px;
     padding: 0 0 0 15px;
 }
@@ -297,7 +284,6 @@
     font-family: "Lato regular";
     font-size: 16px;
     text-align: justify;
-
     margin-top: 20px;
     margin-bottom: 25px;
 }
@@ -306,7 +292,6 @@
     width: 120px;
     height: 40px;
     border: none;
-
     font-family: "Lato regular";
     font-size: 16px;
     color: white;
@@ -320,8 +305,6 @@
 .n-9page-blog-stat {
     display: inline;
     margin-right: 20px;
-
-
     font-family: "Lato regular";
     font-size: 12px;
 }
@@ -342,10 +325,6 @@
     margin-bottom: 50px;
 }
 
-.n-9page-next-news {
-
-}
-
 .n-9page-next-news i {
     text-align: center;
     margin: auto;
@@ -354,13 +333,11 @@
 .n-9page-circle {
     margin-left: auto;
     margin-right: auto;
-
     background: #f2f2f2;
     border-radius: 50%;
     color: #a2a2a2;
     height: 42px;
     width: 42px;
-
     display: flex;
     align-items: center;
     justify-content: center;
