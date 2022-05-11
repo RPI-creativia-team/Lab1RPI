@@ -6,11 +6,13 @@ function _createModal() {
 
 	const overlay_div = document.createElement('div')
 	overlay_div.classList.add('k-modal-overlay')
+	overlay_div.setAttribute('id', 'k-mod-overlay')
 	overlay_div.setAttribute('data-close', 'true')
 	modal.appendChild(overlay_div)
 
 	const window_div = document.createElement('div')
 	window_div.classList.add('k-modal-window')
+	window_div.setAttribute('id', 'k-win')
 	overlay_div.appendChild(window_div)
 
 	// Modal header

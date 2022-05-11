@@ -1,5 +1,4 @@
 const myModal = $.modal()
-const mySuccessModal = $.modalSuccess()
 
 localStorage.clear()
 console.log(localStorage)
@@ -9,7 +8,9 @@ document.addEventListener("click", event=> {
 		checkInputs()
 	}
 	else if (event.target.dataset.open === "open" && localStorage['Ordered'] === 'true') {
-		mySuccessModal.open()
+		addTextToModal()
+		myModal.open()
+		setTimeout(myModal.close, 5000)
 	}
 })
 
@@ -18,11 +19,33 @@ document.addEventListener("click", event=> {
 document.addEventListener('click', event=> {
 	if (event.target.dataset.send === 'true') {
 		myModal.close()
-		mySuccessModal.open()
 
+		addTextToModal()
+		myModal.open()
 		localStorage.setItem('Ordered', 'true')
+
+		setTimeout(myModal.close, 5000)
 	}
 })
+
+function addTextToModal() {
+	let modal_content = document.getElementById('k-win')
+	console.log(modal_content)
+	let parent = document.getElementById('k-mod-overlay')
+	if (modal_content != null) {
+		let del = parent.removeChild(modal_content)
+		const window_div = document.createElement('div')
+		window_div.classList.add('k-modal-window')
+		parent.appendChild(window_div)
+
+		const text = document.createElement('p')
+		text.classList.add('k-success-text')
+		text.innerText = 'Order has been sent'
+		window_div.appendChild(text)
+	}
+
+	
+}
 
 // Cheaking correct data of all inpurts
 function checkInputs() {
@@ -33,7 +56,7 @@ function checkInputs() {
 	var btn_send = document.getElementById('k-btn-send')
 
 	inputs.push(name, email, phone)
-	console.log(inputs)
+	//console.log(inputs)
 
 	const handleChange = () => {
 		if (name.value === "") {
