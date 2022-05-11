@@ -1,6 +1,6 @@
 const myModal = $.modal()
 
-localStorage.clear()
+//localStorage.clear()
 console.log(localStorage)
 document.addEventListener("click", event=> {
 	if (event.target.dataset.open === "open" && localStorage['Ordered'] !== 'true') {
