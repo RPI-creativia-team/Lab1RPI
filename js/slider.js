@@ -86,7 +86,9 @@ function setSlider()
     createSlider(num,'n-5page-data',names[num],pics[num],comments[num])
     localStorage.setItem('number', JSON.stringify(num))
 }
-
+if (localStorage.getItem('number') == null){
+    localStorage.setItem('number', '0');
+}
 const num = JSON.parse(localStorage.getItem('number'))
 createSlider(num,'n-5page-data',names[num],pics[num],comments[num])
 
