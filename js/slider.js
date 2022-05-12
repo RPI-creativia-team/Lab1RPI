@@ -38,7 +38,7 @@ function createSlider(num, parent_id, text, img, comment)
             selectorDiv.style = "margin-right: 4px"
         }
         selectorDiv.onclick = function () {
-            localStorage.setItem('num',JSON.stringify(i))
+            localStorage.setItem('number',JSON.stringify(i))
             removeSlider('n-5page-data')
             createSlider(i,'n-5page-data',names[i],pics[i],comments[i])
         }
@@ -75,7 +75,7 @@ const comments = ['Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inte
 
 function setSlider()
 {
-    let num = JSON.parse(localStorage.getItem('num'))
+    let num = JSON.parse(localStorage.getItem('number'))
     num = (num + 1) % 3
     try {
         removeSlider('n-5page-data')
@@ -84,10 +84,10 @@ function setSlider()
     }
 
     createSlider(num,'n-5page-data',names[num],pics[num],comments[num])
-    localStorage.setItem('num', JSON.stringify(num))
+    localStorage.setItem('number', JSON.stringify(num))
 }
 
-const num = JSON.parse(localStorage.getItem('num'))
+const num = JSON.parse(localStorage.getItem('number'))
 createSlider(num,'n-5page-data',names[num],pics[num],comments[num])
 
 setInterval(function (){setSlider()}, 7000)
