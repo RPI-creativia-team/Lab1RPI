@@ -86,15 +86,65 @@ p.k-main-text-desc{
 /* horizontal positioning */
 .k-col-div-style {
 	display: flex;
+	flex-direction: column;
 	background: #f7f7f7;
+
+
 	width: 564px;
-	height: 45px;
 	border: 1px solid #e7e7e7;
-	margin-bottom: 10px; 
+	margin-bottom: 10px;
+}
+
+.row-tooltip {
+	align-items: center;
+	display: flex;
+	width: 100%;
+	cursor: pointer;
 }
 .k-col-div-style div {
 	/*display: inline-block;  */
 	padding: 0px 0px 0px 0px;
+}
+
+.k-col-div-style .k-hide-text {
+	font-family: Lato regular;
+	font-size: 14px;
+	color: #505050;
+
+	display: none;
+	visibility: hidden;
+	transform: scaleY(0);
+	transition: 0.2s all;
+	background: #fff;
+}
+
+.k-col-div-style .k-hide-text p {
+	line-height: 22px;
+	margin: 17px;
+}
+
+.k-col-div-style.item-opened .k-text-change {
+	transition: 0.2s all;
+	color: red;
+}
+
+.k-col-div-style.item-opened svg:first-child {
+	display: none;
+}
+
+.k-col-div-style.item-opened svg:last-child {
+	display: block;
+}
+
+.k-col-div-style svg:last-child {
+	fill: #ff0036;
+	fill-rule: evenodd;
+}
+
+.k-col-div-style.item-opened .k-hide-text {
+	display: block;
+	visibility: visible;
+	transform: scaleY(1);
 }
 
 .k-div-icon-cont-box {
@@ -104,6 +154,10 @@ p.k-main-text-desc{
 	width: 60px;
 	height: 45px;
 	padding-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
 }
 
 .k-div-text-cont-box {
@@ -120,11 +174,10 @@ p.k-main-text-desc{
 .k-div-text-cont-box p {
 	font-family: Raleway medium;
 	font-size: 20px;
-	color: #262626;   
+	color: #262626;
 	/*position: absolute;*/
 	padding: 10px 0px 9px 34px;
 	/*padding-bottom: 10px;*/
-	padding: auto; 
 	margin: 0px;
 
 }
