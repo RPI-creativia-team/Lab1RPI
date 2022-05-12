@@ -1,6 +1,5 @@
 function createSlider(num, parent_id, text, img, comment)
 {
-    console.log(num)
     const parent = document.getElementById(parent_id)
 
     const comm = document.createElement('p')
@@ -76,7 +75,6 @@ const comments = ['Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inte
 
 function setSlider()
 {
-
     let num = JSON.parse(localStorage.getItem('num'))
     num = (num + 1) % 3
     try {
@@ -88,6 +86,7 @@ function setSlider()
     createSlider(num,'n-5page-data',names[num],pics[num],comments[num])
     localStorage.setItem('num', JSON.stringify(num))
 }
+
 const num = JSON.parse(localStorage.getItem('num'))
 createSlider(num,'n-5page-data',names[num],pics[num],comments[num])
 
