@@ -94,8 +94,12 @@
 
 .n-slider-info {
     width: 1040px;
+    display: none;
 }
 
+.n-active-slide {
+    display: block;
+}
 .n-text-white {
     color: white;
 }
