@@ -1,11 +1,11 @@
-let slideIndex = 1;
+let slideIndex = 3;
 
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+    showSlides(slideIndex += n, n > 0);
 }
 
-function showSlides(n) {
-    let slides = document.getElementsByClassName("n-slider-info");
+function showSlides(n, isRight) {
+    let slides = document.getElementsByClassName("n-carousel-content");
 
     if (n > slides.length)
         slideIndex = 1
@@ -13,8 +13,19 @@ function showSlides(n) {
         slideIndex = slides.length
 
     for (let i = 0; i < slides.length; i++) {
-        slides[i].classList.remove("n-active-slide");
+        slides[i].classList.remove("n-carousel-content-active-goLeft");
+        slides[i].classList.remove("n-carousel-content-active-goRight");
     }
 
-    slides[slideIndex-1].classList.add("n-active-slide");
+    let carousel = document.getElementsByClassName("n-carousel")[0];
+    carousel.classList.remove("n-carousel-leftable");
+    carousel.classList.remove("n-carousel-rightable");
+
+    if (isRight) {
+        carousel.classList.add("n-carousel-rightable");
+        slides[slideIndex - 1].classList.add("n-carousel-content-active-goRight");
+    } else {
+        carousel.classList.add("n-carousel-leftable");
+        slides[slideIndex - 1].classList.add("n-carousel-content-active-goLeft");
+    }
 }
